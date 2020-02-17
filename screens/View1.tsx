@@ -11,7 +11,7 @@ type Props = {
 const component: React.FC<Props> = ({next}) => {
 
   return (
-    <ScrollView>
+    <>
       <View style={{height: Dimensions.get('screen').height * 0.95, backgroundColor: 'green', alignItems: 'center', justifyContent: 'center'}}>
         <TouchableOpacity onPress={() => next()}>
           <Text>クリック</Text>
@@ -30,7 +30,7 @@ const component: React.FC<Props> = ({next}) => {
         </TouchableOpacity>
       </View>
 
-    </ScrollView>
+    </>
   )
 
 }
